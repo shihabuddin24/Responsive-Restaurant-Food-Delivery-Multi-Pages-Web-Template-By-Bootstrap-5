@@ -1,0 +1,61 @@
+
+@media (max-width: 992px) {
+
+    /* Navbar Sectiion  */
+
+    .main-nav .navbar-nav .nav-item {
+        margin: .3rem .7rem;
+    }
+
+    .main-nav .navbar-nav .dropdown-menu .content {
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+        overflow-y: auto;
+    }
+
+    .main-nav .navbar-nav .dropdown-menu.show {
+        transform: unset;
+    }
+
+    .main-nav .navbar .contact-number {
+        margin: 1rem 0rem;
+    }
+
+
+    /* Slider Section  */
+
+
+.slider .carousel-item .post-2 .content,
+.slider .carousel-item .post-3 .content,
+.slider .carousel-item .post-4 .content {
+    top: 30%;
+    padding: 0rem 3rem;
+}
+
+.slider .carousel-item .post-2 .content .subtitle {
+    font-size: .8rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    padding-right: 10%;
+}
+
+.slider .carousel-item .post-3 .content .subtitle {
+    font-size: .8rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    padding-left: 10%;
+}
+
+.slider .carousel-control-next i {
+    left: 10%;
+}
+
+.slider .carousel-control-prev i {
+    right: 10%;
+}
+
+
+
+    
+}

@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --bg-success: #198754;
+    --bg-secondary: #066438;
+    --text-success: #202020;
+    --text-secondary: #eeeeee;
+    --text-content-black: #222222;
+    --text-content-white: #e2e2e2;
+}
+
+/* ============================= */
+/* Navbar Section  */
+/* ============================= */
+
+.main-nav .brand .logo img {
+    height: 3rem;
+    width: 7rem;
+}
+
+.main-nav .navbar .navbar-toggler,
+.main-nav .navbar .navbar-toggler:focus {
+    border: none;
+    box-shadow: unset;
+}
+
+.main-nav .navbar .navbar-toggler i {
+    transition: all .3s ease-in-out;
+}
+
+.main-nav .navbar .navbar-toggler i:hover,
+.main-nav .navbar .navbar-toggler i:focus,
+.main-nav .navbar .navbar-toggler i:active {
+    color: var(--bg-secondary) !important;
+}
+
+.main-nav .navbar .offcanvas .offcanvas-nav i {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.main-nav .navbar .offcanvas .offcanvas-nav h5 {
+    font-weight: bolder;
+    letter-spacing: .08rem;
+}
+
+.main-nav .navbar-nav .nav-item {
+    font-weight: bolder;
+    letter-spacing: .05rem;
+    margin: 0rem .7rem;
+    font-size: 1.07rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--text-success);
+}
+
+.main-nav .navbar-nav .nav-link {
+    transition: all .3s ease-in-out;
+}
+
+.main-nav .navbar-nav .nav-link:hover,
+.main-nav .navbar-nav .nav-link:focus,
+.main-nav .navbar-nav .nav-link.active {
+    background-color: var(--bg-success);
+    color: var(--text-secondary);
+}
+
+.main-nav .navbar-nav .dropdown-menu .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-nav .navbar-nav .dropdown-menu.show {
+    transform: translateX(-38%);
+    top: 3.2rem;
+    border: 1px solid var(--bg-secondary);
+}
+
+.main-nav .navbar-nav .dropdown-menu .content .part {
+    padding: .5rem;
+}
+
+.main-nav .navbar-nav .dropdown-menu .content .part .dropdown-header {
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--bg-success);
+    text-decoration: underline;
+}
+
+.main-nav .navbar-nav .dropdown-menu .content .part .dropdown-item {
+    font-weight: bold;
+    font-size: .85rem;
+    color: var(--text-content-black);
+    transition: all .3s ease-in-out;
+}
+
+.main-nav .navbar-nav .dropdown-menu .content .part .dropdown-item:hover,
+.main-nav .navbar-nav .dropdown-menu .content .part .dropdown-item:focus {
+    background-color: var(--bg-success);
+    color: var(--text-secondary);
+    border-radius: 5px;
+}
+
+.main-nav .navbar .contact-number .btn {
+    font-weight: bold;
+}
+
+/* ================================ */
+/* Slider Section */
+/* ==================================== */
+
+.slider {
+    margin-top: 4.02rem;
+}
+
+.slider .carousel-item .image img {
+    height: 37rem;
+    opacity: 0.95;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+/* Slider Post-1  */
+
+.slider .carousel-item .post-1 .content {
+    color: var(--text-content-white);
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    padding: 1rem;
+}
+
+.slider .carousel-item .post-1 .content .title {
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+}
+
+.slider .carousel-item .post-1 .content .subtitle {
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    padding: .5rem .1rem;
+}
+
+.slider .carousel-item .post-1 .content .btn {
+    font-weight: bold;
+}
+
+/* Slider Post-2  */
+
+.slider .carousel-item .post-2 .content {
+    color: var(--text-content-white);
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    padding: 0rem 3rem;
+}
+
+.slider .carousel-item .post-2 .content .title {
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+}
+
+.slider .carousel-item .post-2 .content .subtitle {
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-right: 30%;
+}
+
+.slider .carousel-item .post-2 .content .btn {
+    font-weight: bold;
+}
+
+/* Slider Post-3  */
+
+.slider .carousel-item .post-3 .content {
+    color: var(--text-content-black);
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    padding: 0rem 3rem;
+}
+
+.slider .carousel-item .post-3 .content .title {
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    color: #0f4a8d;
+}
+
+.slider .carousel-item .post-3 .content .subtitle {
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 40%;
+}
+
+.slider .carousel-item .post-3 .content .btn {
+    font-weight: bold;
+    position: relative;
+    right: 12%;
+}
+
+/* Slider Post-4  */
+
+.slider .carousel-item .post-4 .content {
+    color: var(--text-content-black);
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    padding: 3rem;
+}
+
+.slider .carousel-item .post-4 .content .title {
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+}
+
+.slider .carousel-item .post-4 .content .subtitle {
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-right: 35%;
+}
+
+.slider .carousel-item .post-4 .content .btn {
+    font-weight: bold;
+}
+
+.slider button i {
+    color: rgb(16, 96, 150);
+}
+
+.slider .carousel-control-prev,
+.slider .carousel-control-next {
+    width: 10%;
+}
+
+.slider .carousel-control-next i {
+    position: relative;
+    left: 2rem;
+}
+
+.slider .carousel-control-prev i {
+    position: relative;
+    right: 2rem;
+}
+
+/* Work Method Section  */
+.work-method {
+    margin-top: 4rem;
+}
+
+.work-method h1 {
+    font-weight: bolder;
+    font-size: 2.4rem;
+    letter-spacing: .4rem;
+    margin-bottom: 3rem;
+    color: var(--text-success);
+}
+
+.work-method .card {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.work-method .card:hover {
+    border: 1px solid var(--bg-success);
+    box-shadow: 0px 0px 9px 8px rgba(0, 0, 0, 0.2);
+}
+
+.work-method .card:hover .title{
+    color: rgb(0, 62, 112);
+}
+
+.work-method .card-header {
+    border: none;
+    background: transparent;
+}
+
+.work-method .card i {
+    margin-top: 1rem;
+    color: var(--bg-success);
+    padding: 1rem;
+    border: none;
+    background: transparent;
+}
+
+.work-method .card-body .title {
+    color: var(--text-content-black);
+    letter-spacing: .15rem;
+    font-weight: bold;
+}
+
+.work-method .card-body .subtitle {
+    color: var(--bg-secondary);
+    font-weight: bold;
+}

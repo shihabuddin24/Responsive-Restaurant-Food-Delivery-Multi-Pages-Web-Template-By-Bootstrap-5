@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Food Delivery Multi Pages Web Template</title>
+    <!-- Favicon link  -->
+    <link rel="icon" href="assets/img/favicon/favicon.png">
+    <!-- Own stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Own responsive stylesheet -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Bootstrap Css  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- Fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Section  -->
+    <header class="main-nav container-fluid">
+        <nav class="navbar navbar-expand-lg bg-success-subtle fixed-top text-center shadow-sm">
+            <div class="container">
+
+                <!-- Brand Logo  -->
+                <div class="brand">
+                    <a href="index.html" class="logo">
+                        <img class="img-fluid" src="assets/img/logo/logo.png" alt="Loading">
+                    </a>
+                </div>
+
+                <!-- Offcanvas Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar">
+                    <i class="text-success fa-solid fa-bars"></i>
+                </button>
+
+                <!-- Offcanvas Sidebar -->
+                <div class="offcanvas offcanvas-end bg-success-subtle" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header shadow-sm">
+                        <h5 class="offcanvas-title text-success" id="offcanvasNavbarLabel">Fast-Foodiez</h5>
+                        <i class="btn-close fa-solid fa-xmark text-success" data-bs-dismiss="offcanvas"></i>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav nav-pills mx-auto text-center">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                    Categories
+                                </a>
+                                <ul class="dropdown-menu bg-success-subtle">
+                                    <div class="content text-center">
+                                        <div class="part">
+                                            <li>
+                                                <h6 class="dropdown-header">Burgers</h6>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Chicken Burger</a></li>
+                                            <li><a class="dropdown-item" href="#">Beef Burger</a></li>
+                                            <li><a class="dropdown-item" href="#">Veggie Burger</a></li>
+
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                            <li>
+                                                <h6 class="dropdown-header">Noodles</h6>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Chicken Noodles</a></li>
+                                            <li><a class="dropdown-item" href="#">Beef Noodles</a></li>
+                                            <li><a class="dropdown-item" href="#">Spicy Ramen</a></li>
+                                        </div>
+                                        <div class="part">
+                                            <li>
+                                                <h6 class="dropdown-header">Pizzas</h6>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Margherita Pizza</a></li>
+                                            <li><a class="dropdown-item" href="#">Pepperoni Pizza</a></li>
+                                            <li><a class="dropdown-item" href="#">BBQ Chicken Pizza</a></li>
+
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                            <li>
+                                                <h6 class="dropdown-header">Tacos</h6>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Beef Taco</a></li>
+                                            <li><a class="dropdown-item" href="#">Chicken Taco</a></li>
+                                            <li><a class="dropdown-item" href="#">Fish Taco</a></li>
+                                        </div>
+                                        <div class="part">
+                                            <li>
+                                                <h6 class="dropdown-header">Salads</h6>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Greek Salad</a></li>
+                                            <li><a class="dropdown-item" href="#">Caesar Salad</a></li>
+                                            <li><a class="dropdown-item" href="#">Garden Salad</a></li>
+
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                            <li>
+                                                <h6 class="dropdown-header">Drinks</h6>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Lemonade</a></li>
+                                            <li><a class="dropdown-item" href="#">Iced Coffee</a></li>
+                                            <li><a class="dropdown-item" href="#">Milkshake</a></li>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="contact-number">
+                            <span class="btn btn-success">+88 01745-786855</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slider Section  -->
+    <section class="slider container">
+        <div class="row">
+            <div id="carouselSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="post-1">
+                            <div class="image">
+                                <img src="assets/img/slider/image1.png" alt="Loading" class="img-fluid d-block w-100">
+                            </div>
+                            <div class="content text-center">
+                                <h3 class="title">
+                                    A Perfect Bite of Happiness
+                                </h3>
+                                <p class="subtitle">
+                                    Crispy, flavorful, and made with love-every bite is a delightful experience!
+                                </p>
+                                <a href="#" class="btn btn-success">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="post-2">
+                            <div class="image">
+                                <img src="assets/img/slider/image2.png" alt="Loading" class="img-fluid d-block w-100">
+                            </div>
+                            <div class="content">
+                                <h3 class="title">
+                                    Fresh & Healthy Goodness
+                                </h3>
+                                <p class="subtitle">
+                                    Made from the freshest ingredients to bring you a balanced and nutritious meal!
+                                    Handcrafted sushi rolls with the freshest ingredients.
+                                </p>
+                                <a href="#" class="btn btn-success">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="post-3">
+                            <div class="image">
+                                <img src="assets/img/slider/image3.png" alt="Loading" class="img-fluid d-block w-100">
+                            </div>
+                            <div class="content text-end">
+                                <h3 class="title">
+                                    Taste That Warms the Soul
+                                </h3>
+                                <p class="subtitle">
+                                    Rich flavors and mouthwatering textures-experience the joy of real food!
+                                </p>
+                                <a href="#" class="btn btn-success">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="post-4">
+                            <div class="image">
+                                <img src="assets/img/slider/image4.png" alt="Loading" class="img-fluid d-block w-100">
+                            </div>
+                            <div class="content">
+                                <h3 class="title">
+                                    Savor the Moment
+                                </h3>
+                                <p class="subtitle">
+                                    A delicious treat that brings people together-enjoy every moment of your meal!
+                                </p>
+                                <a href="#" class="btn btn-success">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider"
+                    data-bs-slide="prev">
+                    <span><i class="fa-solid fa-chevron-left fa-3x"></i></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider"
+                    data-bs-slide="next">
+                    <span><i class="fa-solid fa-chevron-right fa-3x"></i></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Method -->
+
+    <section class="work-method container">
+        <h1 class="title text-center">How It's Work</h1>
+        <div class="row justify-content-around text-center">
+            <div class="card col-lg-3">
+                <div class="card-header">
+                    <i class="fa-solid fa-utensils fa-4x"></i>
+                </div>
+                <div class="card-body">
+                    <h3 class="title">
+                        Choose Your Foods
+                    </h3>
+                    <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum consequatur nostrum reiciendis quas ad quisquam cumque consequuntur, sit sed?</p>
+                </div>
+            </div>
+            <div class="card col-lg-3">
+                <div class="card-header">
+                    <i class="fa-solid fa-truck fa-4x"></i>
+                </div>
+                <div class="card-body">
+                    <h3 class="title">
+                        We Deliver Your Foods
+                    </h3>
+                    <p class="subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus hic quod error aliquid dolore earum, saepe deleniti sequi ducimus ratione cupiditate delectus libero iusto, ea omnis.</p>
+                </div>
+            </div>
+            <div class="card col-lg-3">
+                <div class="card-header">
+                    <i class="fa-solid fa-mug-hot fa-4x"></i>
+                </div>
+                <div class="card-body">
+                    <h3 class="title">
+                        Eat And Enjoy Foods
+                    </h3>
+                    <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, doloribus? Fugit vero doloribus animi natus! </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Js  -->
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
