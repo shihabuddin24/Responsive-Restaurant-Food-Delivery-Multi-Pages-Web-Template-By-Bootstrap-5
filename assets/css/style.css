@@ -9,7 +9,7 @@ li {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 
@@ -24,6 +24,14 @@ body {
     --text-secondary: #eeeeee;
     --text-content-black: #222222;
     --text-content-white: #e2e2e2;
+}
+
+.btn {
+    font-weight: bold !important;
+}
+
+.btn:hover {
+    transition: all .3s ease-in-out;
 }
 
 /* ============================= */
@@ -132,7 +140,7 @@ body {
 }
 
 .slider .carousel-item .image img {
-    height: 37rem;
+    height: 40rem;
     opacity: 0.95;
     object-fit: cover;
     border-radius: .5rem;
@@ -274,7 +282,10 @@ body {
     right: 2rem;
 }
 
+/* ======================== */
 /* Work Method Section  */
+/* ========================= */
+
 .work-method {
     margin-top: 4rem;
 }
@@ -290,17 +301,6 @@ body {
 .work-method .card {
     border: none;
     background: transparent;
-    cursor: pointer;
-    transition: all .4s ease-in-out;
-}
-
-.work-method .card:hover {
-    border: 1px solid var(--bg-success);
-    box-shadow: 0px 0px 9px 8px rgba(0, 0, 0, 0.2);
-}
-
-.work-method .card:hover .title{
-    color: rgb(0, 62, 112);
 }
 
 .work-method .card-header {
@@ -325,4 +325,190 @@ body {
 .work-method .card-body .subtitle {
     color: var(--bg-secondary);
     font-weight: bold;
+}
+
+
+/* ============================ */
+/* Menu Section */
+/* ============================== */
+
+.menu {
+    margin-top: 1rem;
+}
+
+.menu .menu-header {
+    margin: 1.5rem 0rem;
+}
+
+.menu .menu-header h1 {
+    letter-spacing: .3rem;
+}
+
+.menu .menu-header h1 p {
+    font-weight: bold;
+}
+
+.menu .card {
+    width: 20rem;
+    border: 1px solid var(--bg-success);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.menu .card:hover {
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.2);
+    background-color: #d1e7dd;
+}
+
+.menu .card:hover img {
+    transform: scale(1.04);
+}
+
+.menu .card:hover .title {
+    color: var(--bg-secondary);
+}
+.menu .card-body .title {
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+.menu .card img {
+    height: 10rem;
+    width: 14rem;
+    border-radius: 5px;
+    margin: 1.8rem 0rem;
+    transition: all .4s ease-in-out;
+}
+
+.menu .card-header {
+    border-bottom: 1px solid var(--bg-success);
+    background: transparent;
+}
+
+.menu .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu .card-footer .price{
+    font-weight: bold;
+    letter-spacing: .1rem;
+    color: var(--bg-success);
+}
+
+.menu .button .btn {
+    width: 10rem;
+}
+
+
+/* ================================ */
+/* Footer Section */
+/* ================================ */
+
+.main-footer .footer-body {
+    margin-top: 1.2rem;
+}
+
+.main-footer .footer-body .title {
+    font-weight: bold;
+    letter-spacing: .1rem;
+    margin-left: 1.7rem;
+    color: var(--bg-secondary);
+}
+
+.main-footer .footer-body .name {
+    font-weight: bold;
+    letter-spacing: .1rem;
+    color: var(--bg-secondary);
+}
+
+.main-footer .footer-body .address {
+    font-weight: bold;
+    font-size: .85rem;
+    color: gray;
+    margin-top: 1.5rem;
+}
+
+.main-footer .footer-body .menu-link {
+    display: flex;
+    gap: 5px;
+    color: gray;
+    font-weight: bold;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+}
+
+.main-footer .footer-body .menu-link:hover {
+    color: #0f4a8d;
+    transform: translateX(5px);
+}
+
+.main-footer .footer-body .menu-link:hover i {
+    transform: scale(1.1);
+}
+
+.main-footer .footer-body .menu-link i {
+    padding: .2rem;
+    color: #1770d6;
+    transition: all .4s ease-in-out;
+}
+
+.main-footer .copyright p{
+    font-weight: bold;
+    color: gray;
+    letter-spacing: .13rem;
+    text-align: center;
+}
+
+
+/* ===================== */
+/* Page Header  */
+/* ======================= */
+
+.header {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .title{
+    font-weight: bolder;
+    letter-spacing: .3rem;
+    color: var(--bg-secondary);
+}
+
+.header .breadcrumb-item{
+    font-weight: bolder;
+    letter-spacing: .08rem;
+}
+
+.header .breadcrumb-item a{
+    color: var(--bg-success);
+    transition: all .3s ease-in-out;
+}
+
+.header .breadcrumb-item a:hover{
+    color: var(--bg-secondary);
+}
+
+/* ================== */
+/* Pagination */
+/* ==================== */
+
+.pagination a,
+.pagination a:focus {
+    border: 1px solid var(--bg-success);
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--bg-success);
+    box-shadow: unset;
+    background: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.pagination a:hover {
+    background-color: var(--bg-success);
+    color: white;
 }
