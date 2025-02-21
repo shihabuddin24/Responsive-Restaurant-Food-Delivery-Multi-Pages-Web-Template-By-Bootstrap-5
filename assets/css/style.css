@@ -34,6 +34,11 @@ body {
     transition: all .3s ease-in-out;
 }
 
+.form-control:focus,
+.form-control.active {
+    box-shadow: unset !important;
+}
+
 /* ============================= */
 /* Navbar Section  */
 /* ============================= */
@@ -423,11 +428,14 @@ body {
     color: var(--bg-secondary);
 }
 
-.main-footer .footer-body .address {
+.main-footer .footer-body .phone,
+.main-footer .footer-body .email,
+.main-footer .footer-body .telephone {
     font-weight: bold;
     font-size: .85rem;
     color: gray;
     margin-top: 1.5rem;
+    line-height: .1rem;
 }
 
 .main-footer .footer-body .menu-link {
@@ -512,3 +520,94 @@ body {
     background-color: var(--bg-success);
     color: white;
 }
+
+/* ================= */
+/* contact Section */
+/* =================== */
+
+.contact {
+    margin-top: 1.5rem;
+}
+
+.contact .title {
+    font-weight: bold;  
+    color: var(--bg-success);
+    letter-spacing: .25rem;
+}
+
+.contact .address,
+.contact .right .subtitie {
+    font-weight: bold;  
+    color: gray;
+    letter-spacing: .1rem;
+}
+
+.contact .right .form-control {
+    border: 1px solid var(--bg-success);
+}
+
+.contact .right .form-label {
+    margin-top: .5rem;
+    font-weight: bolder;
+    letter-spacing: .1rem;
+    color: var(--bg-secondary);
+}
+
+.contact .right .btn {
+    margin-top: .7rem;
+    width: 20%;
+}
+
+.contact .left .ratio iframe{
+    border-radius: .3rem;
+}
+
+/* =========================== */
+/* About Section  */
+/* ============================== */
+
+.about {
+    margin-top: -1.2rem;
+}
+
+.about .title, 
+.about p {
+    font-weight: bold;
+    letter-spacing: .07rem;
+}
+
+.about .card{
+    width: 18rem;
+    border: 1px solid var(--bg-success);
+    border-radius: .85rem;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.about .card:hover{
+    transform: scale(1.04);
+}
+
+.about .card img{
+    width: 17rem;
+    height: 14rem;
+    margin-top: .75rem;
+    border-radius: .5rem;
+}
+
+.about .card .card-body{
+    line-height: .9rem;
+    margin-top: -.5rem;
+}
+
+.about .card .card-body span{
+    color: var(--bg-secondary);
+    font-weight: bolder;
+    margin-right: .5rem;
+    text-decoration: underline;
+}
+
+.about .card .card-body p{
+    color: gray;
+}
+
